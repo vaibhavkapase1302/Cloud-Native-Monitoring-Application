@@ -1,4 +1,13 @@
-# DevOps-Project: Cloud-Native-Monitoring-Application
-## Tech Stacks Used: AWS, Python, Git, GitHub, Terraform, Docker, Kubernetes, Jenkins, CI/CD, Linux, Grafana
 
-<img src="https://github.com/vaibhavkapase1302/Cloud-Native-Monitoring-Application/blob/main/GitOps%20Architecture.jpg" alt="Example Image">
+# cloud-native-monitoring-app-code
+
+This repository contains the application code for cloud-native-monitoring-application. 
+It follows the best practice of GitOps by separating the application code from the manifest repository.
+
+## manifest-repo
+
+The manifest files for deploying and managing the application can be found in the [manifest-repo](https://github.com/Anup-Narkhede/manifest-repo). 
+This repository holds the declarative configuration files (manifests) used to deploy and manage the application in a Kubernetes using CD tool ArgoCD.
+
+
+
