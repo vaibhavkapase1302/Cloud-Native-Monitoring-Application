@@ -84,7 +84,71 @@ Before you start this project, make sure you have the following:
 - A code editor (e.g., VS Code) for writing and editing code.
 
 
-## Installation:
+## Run Application on Local Machine:
+1. Run the application
+```py
+app.py
+```
+
+2. Install Dependencies: python3, flask, psutil
+```py
+install python3
+```
+
+3. Check Version:
+```py
+python -V
+```
+
+4. Install utilities:
+```py
+pip --version
+```
+
+```py
+pip install flask
+```
+
+```py
+pip install psutil
+```
+
+5. Testing the App Locally
+- Run the App: In the terminal, run your Flask app:
+```py
+python3 app.py
+```
+
+- Open Browser: Open a web browser and navigate to http://localhost:5000 to see your running Flask app.
+```http
+http://localhost:5000
+```
+
+
+## Conclusion
+
+The code is running on my local machine.
+We can’t run a server 24/7, so we shift to the cloud.
+
+
+## Cloud Migration
+We are using the Lift and Shift migration strategy.
+
+### Launching EC2 Instance on AWS: 
+ Create AWS EC2 Instance on AWS
+
+### Clone the entire project using Git:
+```c
+git clone git@github.com:vaibhavkapase1302/Cloud-Native-Monitoring-Application.git
+```
+
+Go to 
+```c
+cd Cloud-Native-Monitoring-Application
+```
+
+### Installation:
+
 1. Update the package list:
 ```c
 sudo apt update
@@ -109,6 +173,36 @@ pip3 --version
 ```bash
 sudo apt install virtualenv
 ```
+
+6. Activate the virtual environment:
+```bash
+source env/bin/activate
+```
+
+7. Install Flask:
+```bash
+pip install flask
+```
+
+8. Install psutil module:
+```bash
+pip install psutil
+```
+
+9. In your ```app.py``` file, specify the port number (e.g., 5000):
+```bash
+port = 5000
+```
+
+10. To avoid displaying Flask app logs on the terminal, use nohup to store logs in ```nohup.out```:
+```bash 
+nohup python3 app.py
+```
+
+
+
+Now, our cloud-native web monitoring application can run on our local machine’s localhost and remote server.
+
 
 
 ## License
