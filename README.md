@@ -47,7 +47,6 @@ Before starting the project, make sure you have the following:
 
 4. Docker and Kubectl installed
 5. Code editor (I am using Vscode)
-6. 
-
+   
 
 
