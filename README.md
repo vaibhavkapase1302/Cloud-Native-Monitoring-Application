@@ -35,13 +35,19 @@ Brief description of your project.
 
 Before starting the project, make sure you have the following:
 
-- **AWS Account**: You'll need an AWS account to deploy resources in the cloud.
+1. **AWS Account**: You'll need an AWS account to deploy resources in the cloud.
 
-- **Programmatic Access and AWS CLI Configuration**: Ensure you have programmatic access set up for your AWS account and have the AWS Command Line Interface (CLI) configured with the necessary credentials.
+2. **Programmatic Access and AWS CLI Configuration**: Ensure you have programmatic access set up for your AWS account and have the AWS Command Line Interface (CLI) configured with the necessary credentials.
 
-- **Python 3**: Make sure Python 3 is installed on your system. You can verify this by running:
+3. **Python 3**: Make sure Python 3 is installed on your system. You can verify this by running:
 
   ```bash
   python3 --version
+```
+
+4. Docker and Kubectl installed
+5. Code editor (I am using Vscode)
+6. 
+
 
 
