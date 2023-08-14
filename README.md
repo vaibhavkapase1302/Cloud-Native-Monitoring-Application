@@ -84,6 +84,32 @@ Before you start this project, make sure you have the following:
 - A code editor (e.g., VS Code) for writing and editing code.
 
 
+## Installation:
+1. Update the package list:
+```c
+sudo apt update
+```
+
+2. Upgrade the package list:
+```c
+sudo apt upgrade 
+```
+
+3. Install Python and python3-pip:
+```c
+sudo apt install python3 python3-pip
+```
+
+4. Verify the installation:
+```c
+pip3 --version
+```
+
+5. Create a new virtual environment for Python dependencies:
+```bash
+sudo apt install virtualenv
+```
+
 
 ## License
 
