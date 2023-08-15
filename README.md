@@ -5,8 +5,6 @@
 <!--<img src="https://github.com/vaibhavkapase1302/Cloud-Native-Monitoring-Application/blob/main/GitOps%20Architecture.jpg" width="800" height="300" alt="Example Image">-->
 
 
-# Cloud-Native Monitoring Application
-
 This project guides you through the process of creating a cloud-native monitoring application using Python, Flask, Docker, and Kubernetes. The goal of this project is to build a robust monitoring solution that can track and manage various metrics within a cloud environment.
 
 Through a series of structured phases, you'll learn how to develop the application, containerize it using Docker, and deploy it on an Elastic Kubernetes Cluster (EKS) on AWS. By following these steps, you'll gain valuable insights into creating, packaging, and orchestrating a modern cloud-native application.
