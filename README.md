@@ -209,7 +209,7 @@ Now, our cloud-native web monitoring application can run on our local machine’
 
 Write a Dockerfile:
 
-```c
+```.dockerfile
 # Use the official Python 3.12.0b4 image as the base image
 FROM python:3.12.0b4-slim-bullseye
 
