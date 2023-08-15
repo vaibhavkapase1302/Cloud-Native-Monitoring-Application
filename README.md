@@ -84,6 +84,8 @@ Before you start this project, make sure you have the following:
 - A code editor (e.g., VS Code) for writing and editing code.
 
 
+## Phase 1- Build the app:
+
 ## Run Application on Local Machine:
 1. Run the application
 ```py
@@ -203,7 +205,72 @@ nohup python3 app.py
 
 Now, our cloud-native web monitoring application can run on our local machine’s localhost and remote server.
 
+## Phase 2- Containerize the app:
 
+Write a Dockerfile:
+
+```c
+# Use the official Python 3.12.0b4 image as the base image
+FROM python:3.12.0b4-slim-bullseye
+
+# Set the working directory within the container to /app
+WORKDIR /app
+
+# Copy the entire current directory into the container's /app directory
+COPY . .
+
+# Install the dependencies from requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+# Set an environment variable to specify the host when running the Flask app
+ENV FLASK_RUN_HOST=0.0.0.0
+
+# Expose port 5000 from the container to the host
+EXPOSE 5000
+
+# Specify the command to run when the container starts
+CMD ["flask", "run"]
+```
+
+Install Docker on Linux Ubuntu:
+- a. Add the Docker repository:
+```c
+sudo apt-get install -y \
+   apt-transport-https \
+   ca-certificates \
+   curl \
+   software-properties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+
+- b. Install Docker:
+```c
+sudo apt update
+sudo apt install -y docker-ce docker-ce-cli containerd.io
+```
+
+
+1. Create a Docker Image
+```c
+docker build -t my-flask-app <image name> .
+```
+
+2. Check Docker images
+```c
+docker images
+```
+
+```c
+docker run -p 5000:5000 eeccc15c8a3b <image id>
+```
+
+
+
+## Phase 3- Deploy the App on Kubernetes
+
+## Phase 4- 
 
 ## License
 
