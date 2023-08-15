@@ -20,23 +20,18 @@ Brief description of your project.
 - [Contributing](#contributing)
 - [License](#license)
 
-## Introduction
-
-Introduce your project briefly and provide context for its purpose and goals.
-
-## Features
-
-List the key features and functionalities of your project.
-
-## Installation
-
-# Cloud-Native Monitoring Application
+## Cloud-Native Monitoring Application
 
 This project guides you through the process of creating a cloud-native monitoring application using Python, Flask, Docker, and Kubernetes. The goal of this project is to build a robust monitoring solution that can track and manage various metrics within a cloud environment.
 
 Through a series of structured phases, you'll learn how to develop the application, containerize it using Docker, and deploy it on an Elastic Kubernetes Cluster (EKS) on AWS. By following these steps, you'll gain valuable insights into creating, packaging, and orchestrating a modern cloud-native application.
 
 Whether you're new to cloud-native development or looking to enhance your skills, this project provides hands-on experience with key concepts and tools, allowing you to monitor and manage your applications effectively in a cloud environment.
+## Features
+
+List the key features and functionalities of your project.
+
+## Installation
 
 
 # Cloud-Native Monitoring Application with Flask, Docker, and Kubernetes
