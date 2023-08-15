@@ -81,7 +81,7 @@ Before you start this project, make sure you have the following:
 ## Run Application on Local Machine:
 1. Run the application
 ```py
-app.py
+python3 app.py
 ```
 
 2. Install Dependencies: python3, flask, psutil
