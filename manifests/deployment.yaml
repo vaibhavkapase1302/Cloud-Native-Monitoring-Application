@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLable:
+      app: my-app
+  template:
+    metadata:
+      lables:
+        app: my-app
+    spec:
+      containers:
+      - name: my-app-container
+        image: 494855333795.dkr.ecr.us-east-1.amazonaws.com/flask-app:${params.IMAGE_TAG}
+        ports:
+        - containers: 5001
+
